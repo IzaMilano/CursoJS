@@ -18,16 +18,7 @@
         line-height: 200px;
         text-align: center;
     }
-    /* EVENTOS DOM - qlqr evento que possa acontecer com determinada DIV
-     o mais comum: evento de mouse
-     mouseenter
-     mousemove
-     mousedown
-     mouseup
-     click
-     mouseout
-     a função só vai ser executada, qndo o evento ocorrer
-     */
+   
 </style>
 
 <body>
@@ -38,7 +29,7 @@
 
     <script>
         
-        var a = window.document.getElementById('area')
+        var a = document.getElementById('area')
         a.addEventListener('click',clicar)
         a.addEventListener('mouseenter',entrar)
         a.addEventListener('mouseout', sair)

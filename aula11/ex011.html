@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Sistema de Verificação de Cidadania Brasileira</h1>
+    <p>Digite em qual país você nasceu</p>
+
+    <input name="paisdigitado" id="paisdigitado" type="text">
+    <input type="button" value="verificar" onclick="cidadania()">
+    <div id="resultado"></div>
+
+    <script>
+        function cidadania() 
+        {
+            var nomepais = document.getElementById('paisdigitado');
+            var resultado = document.querySelector('div#resultado');
+            var pais = (nomepais.value);
+            
+            
+            if (pais == 'brasil')
+            {
+                resultado.innerHTML = `Você nasceu no <strong>${pais}</strong>, parabéns! Você é Brasileiro.`
+            
+            } else  
+            
+                resultado.innerHTML = `Se o seu País de origem é <strong>${pais}</strong>, você é Estrangeiro.` 
+            
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
